@@ -31,19 +31,19 @@ def zeller(date, month, year):   # Day, Month, Year in full
     dow = int((date + ((13 * (month + 1)) / 5) + k + int(k / 4) + int(j / 4) + (5 * j)) % 7)
 
     if dow == 1:
-        day = "Sunday"
+        day = "Minggu"
     elif dow == 2:
-        day = "Monday"
+        day = "Senin"
     elif dow == 3:
-        day = "Tuesday"
+        day = "Selasa"
     elif dow == 4:
-        day = "Wednesday"
+        day = "Rabu"
     elif dow == 5:
-        day = "Thursday"
+        day = "Kamis"
     elif dow == 6:
-        day = "Friday"
+        day = "Jum'at"
     else:
-        day = "Saturday"
+        day = "Sabtu"
 
     return day
 
@@ -70,5 +70,5 @@ del resp
 print('Tweeting...')
 #api.update_with_media("/home/pi/todaymemebot/local_image.jpg", status = 'Today is a {0}\nHere\'s A Random Meme from {1}'.format(dayname, reddit))
 media = api.media_upload("/home/pi/todaymemebot/local_image.jpg")
-api.update_status('Today is a {0}\nHere\'s A Random Meme from {1}'.format(dayname, reddit), media_ids=[media.media_id])
+api.update_status('Meme Untuk Hari {0}'.format(dayname, reddit), media_ids=[media.media_id])
 print('done')
