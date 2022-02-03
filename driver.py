@@ -10,9 +10,9 @@ year = int(datetime.today().strftime('%Y'))
 
 
 
-auth = tweepy.OAuthHandler("API Key", "API Secret")
+auth = tweepy.OAuthHandler("4SoiG0kYGn55WlgqMVI3UMz9Z", "e2DxiLqxS0Mo2pTCEATj2ZjvEzIwVoF6S13d5unRnrXqIZm0gG")
 
-auth.set_access_token("Access Token", "Access Token Secret")
+auth.set_access_token("1306327772927680512-fCigNKWF7JynFyjdWrSgthlFdF42P9", "rDlFeWEFY6TxfSP88xJoNFa4jA25xyE8r0oEa2MBaJtzh")
 
 api = tweepy.API(auth)
 
